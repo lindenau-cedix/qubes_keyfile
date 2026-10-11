@@ -120,7 +120,9 @@ force_drivers+=" usb-storage "
 ## `/etc/default/grub`
 
 ```bash
-GRUB_CMDLINE_LINUX="quiet rd.luks.timeout=90"
+In GRUB_CMDLINE_LINUX:
+remove: rd.luks.uuid=....
+add: rd.luks.timeout=90
 ```
 
 ---
